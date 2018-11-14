@@ -3,7 +3,7 @@ import React from 'react';
 function Button (props){
     return(
         <div>
-        <input type="radio" name="radio" id={props.idText}/>
+        <input type="radio" name="radio" value= {props.value} id={props.idText} onChange = {props.onChange}/>
             <label htmlFor={props.buttonLabel}>{props.buttonText}</label>         
         </div>
     )
